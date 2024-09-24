@@ -1,0 +1,80 @@
+<!DOCTYPE html> 
+<html lang="nl">
+<link rel="stylesheet" href= "../Podcast Lifecast/styles.css" rel="stylesheet"/>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Podcast LIFECAST</title>
+    </head>
+<body>
+    <!-- navigatie html gegenereerd met behulp van Copilot -->
+    <nav>
+        <ul>
+            <li><a onclick="showSection('home')">Home</a></li>
+            <li><a onclick="showSection('about')">Over Ons</a></li>
+            <li><a onclick="showSection('services')">Afleveringen</a></li>
+        </ul>
+    </nav>
+   
+     <!-- content structuur html gegenereerd met behulp van Copilot -->
+    <div class="content">
+
+        <!-- home page content -->
+        <div id="home" class="section active">
+        <div style="text-align: center;">
+            <img src="../Podcast Lifecast/images/logo podcast lifecast.jpg" alt="Lifecast logo" />
+        </div>
+            <h1>LIFECAST</h1>
+                        <p>Hé jij! Ja, jij daar.  Welkom bij LIFECAST,</p>
+
+                <p>podcast waar we je dilemma’s niet alleen bespreken, maar waar je ook stiekem om lacht. Hier draait alles om humor, ongezouten eerlijkheid en advies dat nét een beetje over de top is.
+                Dus als je problemen hebt die je met niemand durft te delen, geen zorgen—wij pakken ze met beide handen aan, zonder filter.</p>
+                
+                <p>Neem bijvoorbeeld Amber, een luisteraar die ons mailde met een gênant schoolprobleem.</p>
+                <p>Ze had per ongeluk een super persoonlijke liefdesbrief naar haar hele klas gestuurd in plaats van naar haar crush. 
+                Wat doe je dan? Wegduiken onder je bureau? Fake sick spelen? Ons advies? Kom opdagen in stijl, en zeg dat het een "sociale experiment" was—kijken wie erop reageert!
+                Ja, bij LIFECAST is geen probleem te gek. We lachen, we huilen (van het lachen), en we geven je advies waar je misschien nooit om hebt gevraagd, maar altijd nodig hebt. 
+                Want als jij niet om je eigen gênante momenten kunt lachen, doen wij het graag voor je!</p>
+
+
+                <p> Waarom de naam LIFECAST? 
+                    Nou, simpel. Het leven is een shitshow, en wij zijn hier om het commentaar te leveren dat je vrienden je nooit durven te geven. 
+                    Van liefde tot werkdrama’s – we got you. En ja, ik ben hier voor dat ongezouten advies waar je achteraf oh damn van zegt.
+                    Dus pak die thee (of een shot tequila) en luister naar LIFECAST – de podcast waar we jouw problemen het podium geven.</p>
+
+                    
+            <p>Bezoek onze website voor meer informatie: 
+                <a href="https://jouwlifecastwebsite.com" target="_blank">LIFECAST website</a>
+            </p>
+            <p>
+        </div>
+        <!-- einde home page content -->
+
+
+        <div id="about" class="section">
+            <h1>Over Ons</h1>
+            <p>Dit is de over ons sectie.</p>
+            <p>Dit is de inhoud van Lifecast</p>
+        </div>
+
+        <div id="services" class="section">
+            <h1>Diensten</h1>
+            <p>Dit is de diensten sectie.</p>
+        </div>
+
+    </div>
+
+    <script>
+        //Script gegenereerd door Copilot
+        function showSection(sectionId) {
+            var sections = document.querySelectorAll('.section');
+            sections.forEach(function(section) {
+                section.classList.remove('active');
+            });
+            document.getElementById(sectionId).classList.add('active');
+            <!-- home page content -->
+        }
+    </script>
+</body>
+
+</html>
